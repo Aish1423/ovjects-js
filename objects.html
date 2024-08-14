@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a1 = [1, "Divanshu", "BCA", "CT - Maq", false, 5, 450];
+        var obj = {
+            roll:1,
+            name: "Divanshu",
+            class : "BCA",
+            college: "CT - Maq",
+            "is graduate": false,
+            currentSemester: 5,
+            lastSemMarks:450,
+            personalInfo:{
+                age:19,
+                fatherNmae:"Father",
+                motherNmae: "Mother"
+            },
+            marks:[300,322,350,400,450]
+        }
+
+            obj.bloodGroup = "0+"
+            obj['blood group'] = "O+"
+
+        delete obj.class
+        obj.college = "CT - Sha"
+        
+        
+        console.log(obj);
+        console.log(obj.class);
+        console.log(obj["is graduate"]);
+        console.log(obj['currentSemester']);
+
+
+        console.log(obj.personalInfo.mothersName);
+        console.log(obj['personalInfo']['mothersName']);
+        console.log(obj.marks[2]);
+    </script>
+</body>
+</html>
